@@ -1,0 +1,24 @@
+<Profile id="scap-demo">
+<title>SCAP Profile for Demo Purposes</title>
+<description>This profile contains items common to server installations.</description>
+
+<select idref="package_rsyslog_installed" selected="true"/>
+<select idref="service_rsyslog_enabled" selected="true"/>
+
+<select idref="sshd_allow_only_protocol2" selected="true"/>
+<select idref="sshd_disable_root_login" selected="true"/>
+<select idref="sshd_disable_empty_passwords" selected="true"/>
+<select idref="sshd_use_approved_ciphers" selected="true"/>
+
+<select idref="service_telnetd_disabled" selected="true"/>
+<select idref="package_telnet_removed" selected="true"/>
+
+<refine-value idref="var_selinux_state" selector="enforcing"/>
+<refine-value idref="var_selinux_policy_name" selector="targeted"/>
+
+<select idref="selinux_state" selected="true"/>
+<select idref="selinux_policytype" selected="true"/>
+
+<select idref="ensure_redhat_gpgkey_installed" selected="true"/>
+
+</Profile>
