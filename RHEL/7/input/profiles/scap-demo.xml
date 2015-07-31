@@ -7,8 +7,6 @@
 
 <select idref="sshd_allow_only_protocol2" selected="true"/>
 <select idref="sshd_disable_root_login" selected="true"/>
-<select idref="sshd_disable_empty_passwords" selected="true"/>
-<select idref="sshd_use_approved_ciphers" selected="true"/>
 
 <select idref="service_telnetd_disabled" selected="true"/>
 <select idref="package_telnet_removed" selected="true"/>
